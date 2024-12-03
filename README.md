@@ -21,7 +21,7 @@ This challenge allows users to rate a product by selecting a number of stars. Th
 
 ### Links
 
-- [Live Site](https://erik5ca/github.io/interactive-rating-component)
+- [Live Site](https://erik5ca.github.io/interactive-rating-component/)
 
 ## My process
 
