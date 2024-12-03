@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="rating-state">
+      <div class="rating-state__container">
+        <div class="rating-state__star">
+          <img
+            class="rating-state__star-icon"
+            src="./images/icon-star.svg"
+            alt="Star icon"
+          />
+        </div>
+        <div class="rating-state__content">
+          <h1 class="rating-state__title">How did we do?</h1>
+          <p class="rating-state__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-state__rating">
+          <form action="" class="rating-state__form">
+            <fieldset class="rating-state__fieldset">
+              <legend class="rating-state__legend">
+                How was your experience?
+              </legend>
+              <input
+                class="rating-state__input"
+                type="radio"
+                id="star1"
+                name="rating"
+                value="1"
+              />
+              <label
+                class="rating-state__label"
+                for="star1"
+                title="Sorry to hear that. Thank you for your
+                feedback!"
+                >1</label
+              >
+              <input
+                class="rating-state__input"
+                type="radio"
+                id="star2"
+                name="rating"
+                value="2"
+              />
+              <label
+                class="rating-state__label"
+                for="star2"
+                title="Meh. Thank you for your feedback!"
+                >2</label
+              >
+              <input
+                class="rating-state__input"
+                type="radio"
+                id="star3"
+                name="rating"
+                value="3"
+              />
+              <label
+                class="rating-state__label"
+                for="star3"
+                title="Not bad. Thank you for your feedback!"
+                >3</label
+              >
+              <input
+                class="rating-state__input"
+                type="radio"
+                id="star4"
+                name="rating"
+                value="4"
+              />
+              <label
+                class="rating-state__label"
+                for="star4"
+                title="Pretty good! Thank you for your feedback!"
+                >4</label
+              >
+              <input
+                class="rating-state__input"
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+              />
+              <label
+                class="rating-state__label"
+                for="star5"
+                title="Awesome! Thank you for your feedback!"
+                >5</label
+              >
+            </fieldset>
+            <button class="rating-state__button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="rating-state__submitted">
+        <div class="rating-state__wrapper">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="thank you image"
+          />
+          <p class="rating-state__message">
+            You selected <span id="user-rating"></span> out of 5
+          </p>
+        </div>
+        <div class="rating-state__content rating-state__content--text-aling">
+          <h2>Thank you!</h2>
+          <p class="rating-state__description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

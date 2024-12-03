@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-light: hsl(214, 12%, 23%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
+button {
+  font-family: "Overpass", sans-serif;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.rating-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.rating-state__container,
+.rating-state__submitted {
+  width: 88.8%;
+  display: flex;
+  flex-direction: column;
+  max-width: 26rem;
+  margin: 0 auto;
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.rating-state__star {
+  width: 100%;
+}
+
+.rating-state__star-icon {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue-light);
+}
+
+.rating-state__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rating-state__title {
+  font-size: 1.5rem;
+}
+
+.rating-state__description {
+  color: var(--light-grey);
+}
+
+.rating-state__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating-state__fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.rating-state__legend {
+  display: none;
+}
+
+.rating-state__label {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--dark-blue-light);
+  color: var(--light-grey);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rating-state__label:hover {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}
+
+.rating-state__input {
+  display: none;
+}
+
+.rating-state__input[id="star1"]:checked ~ .rating-state__label[for="star1"],
+.rating-state__input[id="star2"]:checked ~ .rating-state__label[for="star2"],
+.rating-state__input[id="star3"]:checked ~ .rating-state__label[for="star3"],
+.rating-state__input[id="star4"]:checked ~ .rating-state__label[for="star4"],
+.rating-state__input[id="star5"]:checked ~ .rating-state__label[for="star5"] {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.rating-state__button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  background-color: var(--orange);
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6rem;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  line-height: 1;
+}
+
+.rating-state__button:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.dont-show {
+  display: none;
+}
+
+.rating-state__content--text-aling {
+  text-align: center;
+}
+
+.rating-state__submitted {
+  gap: 2rem;
+}
+
+.rating-state__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-state__message {
+  background-color: var(--dark-blue-light);
+  color: var(--orange);
+  padding: 0.5rem 1rem;
+  border-radius: 6rem;
+  line-height: 1;
+}
